@@ -7,21 +7,70 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
+  <header>
+    <img src="./images/logo.svg" alt="Logo da página">
+    <button type="button" id="btn-collapse-nav-menu">
+      <img src="./images/icon-menu.svg" alt="button that activates navigation menu">
+    </button>
 
-  Features
-  Company
-  Careers
-  About
+    <nav class="menu-navigation">
+      <button type="button" id="btn-close-nav-menu">
+        <img src="./images/icon-close-menu.svg" alt="">
+      </button>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <h4 class="title-nav-item">Features</h4>
+          <a href="#" class="nav-item-link">
+            <img src="./images/icon-todo.svg" alt="icon todo list">
+            Todo List
+          </a>
+          <a href="#" class="nav-item-link">
+            <img src="./images/icon-calendar.svg" alt="icon calendar">
+            Calendar
+          </a>
+          <a href="#" class="nav-item-link">
+            <img src="./images/icon-reminders.svg" alt="icon reminders">
+            Reminders
+          </a>
+          <a href="#" class="nav-item-link">
+            <img src="./images/icon-planning.svg" alt="icon planning">
+            Planning
+          </a>
+        </li>
+        <li class="nav-item">
+          <h4 class="title-nav-item">Company</h4>
+          <a href="#" class="nav-item-link">History</a>
+          <a href="#" class="nav-item-link">Our Team</a>
+          <a href="#" class="nav-item-link">Blog</a>
+        </li>
+        <li class="nav-item">Careers</li>
+        <li class="nav-item">About</li>
+      </ul>
 
-  Login
-  Register
+      <button id="btn-login" type="button">Login</button>
+      <button id="btn-register" type="button">Register</button>
+        
+    </nav>
+  </header>
 
-  Make remote work
+  <section class="page-section">
+    <img src="./images/image-hero-mobile.png" alt="background image section" id="back-image">
+      <h1 class="title-section">Make remote work</h1>
+        <p class="paragraph-section">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+  
+        <button id="btn-learn-more">Learn more</button>
+    
+        <footer class="clients">
+          <img src="./images/client-databiz.svg" alt="client databiz" class="client">
+          <img src="./images/client-audiophile.svg" alt="client audiophile" class="client">
+          <img src="./images/client-meet.svg" alt="client meet" class="client">
+          <img src="./images/client-maker.svg" alt="client maker" class="client">
+        </footer>
+  </section>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
