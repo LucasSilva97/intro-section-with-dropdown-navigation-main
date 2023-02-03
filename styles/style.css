@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    
+}
+
+.menu-navigation{
+    display: none;
+}
+
+.dp-none{
+    display: none;
+}
+
+.dp-block{
+    display: block;
+}
+
+.dp-flex{
+    display: flex;
+}
