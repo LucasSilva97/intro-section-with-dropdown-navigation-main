@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css" type="text/css">
+  <link rel="stylesheet" href="./styles/queries.css" type="text/css">
   
   <title>Intro section with dropdown navigation</title>
 </head>
@@ -28,58 +29,65 @@
             <img src="./images/icon-arrow-down.svg" alt="arrow active Features"
             id="arrow-feactures">
           </h4>
-          <a href="#" class="nav-item-link">
-            <img src="./images/icon-todo.svg" alt="icon todo list">
-            Todo List
-          </a>
-          <a href="#" class="nav-item-link">
-            <img src="./images/icon-calendar.svg" alt="icon calendar">
-            Calendar
-          </a>
-          <a href="#" class="nav-item-link">
-            <img src="./images/icon-reminders.svg" alt="icon reminders">
-            Reminders
-          </a>
-          <a href="#" class="nav-item-link">
-            <img src="./images/icon-planning.svg" alt="icon planning">
-            Planning
-          </a>
+            <div class="anchors-nav-item">
+            <a href="#" class="nav-item-link">
+              <img src="./images/icon-todo.svg" alt="icon todo list">
+              Todo List
+            </a>
+            <a href="#" class="nav-item-link">
+              <img src="./images/icon-calendar.svg" alt="icon calendar">
+              Calendar
+            </a>
+            <a href="#" class="nav-item-link">
+              <img src="./images/icon-reminders.svg" alt="icon reminders">
+              Reminders
+            </a>
+            <a href="#" class="nav-item-link">
+              <img src="./images/icon-planning.svg" alt="icon planning">
+              Planning
+            </a>
+          </div>
         </li>
         <li class="nav-item">
           <h4 class="title-nav-item">Company
             <img src="./images/icon-arrow-down.svg" alt="arrow active Features"
             id="arrow-company">
           </h4>
-          <a href="#" class="nav-item-link">History</a>
-          <a href="#" class="nav-item-link">Our Team</a>
-          <a href="#" class="nav-item-link">Blog</a>
+            <div class="anchors-nav-item">
+            <a href="#" class="nav-item-link">History</a>
+            <a href="#" class="nav-item-link">Our Team</a>
+            <a href="#" class="nav-item-link">Blog</a>
+          </div>
         </li>
-        <li class="nav-item">Careers</li>
-        <li class="nav-item">About</li>
+        
+          <li class="nav-item">Careers</li>
+          <li class="nav-item">About</li>
       </ul>
 
-      <button id="btn-login" type="button">Login</button>
-      <button id="btn-register" type="button">Register</button>
+      <div class="nav-buttons">
+        <button id="btn-login" type="button">Login</button>
+        <button id="btn-register" type="button">Register</button>
+      </div>
         
     </nav>
   </header>
 
   <section>
-    <img src="./images/image-hero-mobile.png" alt="background image section" id="back-image">
-      <h1>Make remote work</h1>
-        <p class="paragraph-section">
-          Get your team in sync, no matter your location. Streamline processes, 
-          create team rituals, and watch productivity soar.
-        </p>
-  
-        <button id="btn-learn-more">Learn more</button>
-    
-        <footer class="clients">
-          <img src="./images/client-databiz.svg" alt="client databiz">
-          <img src="./images/client-audiophile.svg" alt="client audiophile">
-          <img src="./images/client-meet.svg" alt="client meet">
-          <img src="./images/client-maker.svg" alt="client maker">
-        </footer>
+      <img src="./images/image-hero-mobile.png" alt="background image section" id="back-image">
+      <div class="paragraph-section">
+        <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <button id="btn-learn-more">Learn more</button>
+          <footer class="clients">
+            <img src="./images/client-databiz.svg" alt="client databiz">
+            <img src="./images/client-audiophile.svg" alt="client audiophile">
+            <img src="./images/client-meet.svg" alt="client meet">
+            <img src="./images/client-maker.svg" alt="client maker">
+          </footer>
+    </div>
   </section>
 
   
