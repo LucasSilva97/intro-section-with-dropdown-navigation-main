@@ -1,0 +1,112 @@
+@media (min-width: 870px) {
+
+    header{
+        height: 3rem;
+    }
+
+    #btn-collapse-nav-menu{
+        display: none;
+    }
+
+    .menu-navigation{
+        position: relative;
+        width: 80%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .menu-navigation ul{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #btn-close-nav-menu{
+        display: none;
+    }
+
+    .nav-item{
+        position: relative;
+    }
+
+    .nav-item .anchors-nav-item{
+        display: none;
+        background-color: hsl(0, 0%, 98%);
+        position: absolute;
+        width: 120px;
+        padding: 20px 0;
+        top: 50px;
+
+        background-size: cover;
+        box-sizing: border-box;
+
+        border-radius: 12px;
+        box-shadow: 1px 1px 10px hsl(0, 1%, 38%);
+
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+   .menu-navigation #btn-register:hover {
+        transition: 500ms;
+        background-color: hsl(0, 0%, 41%);
+        color: hsl(0, 0%, 98%);
+   }
+
+   section{
+        display: flex;
+        flex-direction: row-reverse;
+        max-height: 30rem;
+        padding: 40px;
+        gap: 30px;
+
+        justify-content: space-between;
+
+    }
+    
+    section img{
+        max-width: 30vw;
+        max-height: 70vh;
+        position: relative;
+    }
+
+    section .paragraph-section{
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        padding: 50px;
+        
+        text-align: left;
+        font-size: 18px;
+   }
+
+   section h1 {
+    font-size: 3rem;
+   }
+
+   .paragraph-section p {
+        margin-top: 30px;
+        word-spacing: 2px;
+        line-height: 25px;
+   }
+
+   .paragraph-section #btn-learn-more{
+        margin-top: 25px;
+   }
+
+   .paragraph-section .clients{
+        justify-self: flex-end;
+        margin-top: 5rem;
+        width: 100%;
+        
+        justify-content: space-between;
+   }
+
+   .clients img {
+        width: 30rem;
+        height: 1.5rem;
+   }
+}
