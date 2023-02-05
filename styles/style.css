@@ -97,6 +97,13 @@ a img{
     cursor: pointer;
 }
 
+.menu-navigation .nav-buttons{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 15px;
+}
+
 .menu-navigation #btn-login :hover{
     color: hsl(0, 0%, 15%);
 }
