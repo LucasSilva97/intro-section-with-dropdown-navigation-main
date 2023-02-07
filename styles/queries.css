@@ -49,6 +49,11 @@
         font-weight: 700;
     }
 
+    .menu-navigation .nav-buttons{
+        flex-direction: row;
+        margin: 0;
+    }
+
    .menu-navigation #btn-register:hover {
         transition: 500ms;
         background-color: hsl(0, 0%, 41%);

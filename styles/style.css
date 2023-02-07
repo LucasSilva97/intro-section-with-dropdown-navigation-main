@@ -101,27 +101,32 @@ a img{
     cursor: pointer;
 }
 
-.menu-navigation .nav-buttons{
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 15px;
-}
-
 .menu-navigation #btn-login :hover{
     color: hsl(0, 0%, 15%);
 }
+.menu-navigation .nav-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 15px;
+
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+
 
 .menu-navigation #btn-register{
     background: transparent;
-    padding: 5px 10px;
+    flex-basis: content;
+    padding: 5px 30px;
     margin-bottom: 7px;
     border: 1.5px solid hsl(0, 0%, 41%);
     border-radius: 7px;
 
     color:hsl(0, 1%, 38%);
-    font-weight: 500;
-    font-size: .835;
     cursor: pointer;
 }
 
