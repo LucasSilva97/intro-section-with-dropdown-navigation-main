@@ -53,8 +53,12 @@ ul .title-nav-item{
     font-weight: 500;
 }
 
-ul .nav-item, .anchors-nav-item{
+ul .nav-item{
     display: flex;
+    
+}
+
+ul .nav-item, .anchors-nav-item{
     flex-direction: column;
     justify-content: center;
     
@@ -202,5 +206,9 @@ section .clients{
 
 .dp-none{
     display: none;
+}
+
+.dp-flex{
+    display: flex;
 }
 

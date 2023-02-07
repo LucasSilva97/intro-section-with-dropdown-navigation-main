@@ -33,7 +33,6 @@
     }
 
     .nav-item .anchors-nav-item{
-        display: none;
         background-color: hsl(0, 0%, 98%);
         position: absolute;
         width: 120px;
