@@ -45,3 +45,4 @@ navCompany.onclick = ()=>{
     changeArrow(document.getElementById("arrow-company"));
     showAndHideDivAnchors(document.getElementById("company-anchors"));
 }
+
