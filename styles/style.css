@@ -196,11 +196,11 @@ section .clients{
 .attribution{
     font-size: 12px;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    margin: auto;
-
+    position: relative;
     width: 100%;
+    top: 100%;
+    margin-top: 50px;
+    
 }
 
 .attribution a {
