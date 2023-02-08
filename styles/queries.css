@@ -70,6 +70,10 @@
         justify-content: space-between;
 
     }
+
+    section img{
+        src: url("./images/image-hero-desktop.png");
+    }
     
     section img{
         max-width: 30vw;
@@ -89,6 +93,10 @@
 
    section h1 {
     font-size: 3rem;
+   }
+
+   #back-image{
+        src: url('./images/image-hero-desktop.png');
    }
 
    .paragraph-section p {

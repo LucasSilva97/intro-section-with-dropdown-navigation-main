@@ -46,3 +46,18 @@ navCompany.onclick = ()=>{
     showAndHideDivAnchors(document.getElementById("company-anchors"));
 }
 
+window.addEventListener("load",()=>{
+    changeHeroImageSection();
+})
+
+window.addEventListener("resize",()=>{
+   changeHeroImageSection();
+})
+
+function changeHeroImageSection(){
+    if(window.innerWidth >= 870){
+        document.getElementById("back-image").src = "./images/image-hero-desktop.png";
+    } else {
+        document.getElementById("back-image").src = "./images/image-hero-mobile.png"
+    }
+}
