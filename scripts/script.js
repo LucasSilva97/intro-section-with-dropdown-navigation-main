@@ -6,10 +6,13 @@ const navCompany = document.querySelector("#nav-company")
 
 btnCollapseNavMenu.addEventListener('click', ()=>{
     menuNavigation.classList.remove('dp-none');
-
+    
     btnclosenavMenu.addEventListener('click',()=>{
-        menuNavigation.classList.add('dp-none');
+        menuNavigation.style.webkitAnimation = "hide-slide 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards";
+        menuNavigation.style.animation = "hide-slide 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards";
     })
+    menuNavigation.style.animation = "";
+
 }) 
 
 
@@ -33,8 +36,6 @@ function showAndHideDivAnchors(divAnchor){
         divAnchor.classList.remove("dp-flex");
         divAnchor.classList.add("dp-none")
     }
-
-    console.log(divAnchor.classList.contains("dp-none"));
 }
 
 navFeature.onclick = ()=>{
