@@ -10,6 +10,12 @@ btnCollapseNavMenu.addEventListener('click', ()=>{
     btnclosenavMenu.addEventListener('click',()=>{
         menuNavigation.style.webkitAnimation = "hide-slide 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards";
         menuNavigation.style.animation = "hide-slide 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards";
+
+        setTimeout(()=>{
+            if(!menuNavigation.classList.contains('dp-none')){
+                menuNavigation.classList.add('dp-none');
+            }
+        },700);
     })
     menuNavigation.style.animation = "";
 
@@ -58,6 +64,7 @@ window.addEventListener("resize",()=>{
 function changeHeroImageSection(){
     if(window.innerWidth >= 870){
         document.getElementById("back-image").src = "./images/image-hero-desktop.png";
+        menuNavigation.style.animation = "show-slide-left 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
     } else {
         document.getElementById("back-image").src = "./images/image-hero-mobile.png"
     }
