@@ -192,11 +192,6 @@ section .clients{
     margin-top: 20px;
 }
 
-.clients a {
-    /* width: 5rem;
-    height: 3rem; */
-}
-
 .clients a img {
     width: 5rem;
     height: 2rem;
