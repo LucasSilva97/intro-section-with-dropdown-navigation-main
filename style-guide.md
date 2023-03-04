@@ -25,3 +25,6 @@ The designs were created to the following widths:
 
 - Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
 - Weights: 500, 700
+
+### Credits
+<a href="https://www.flaticon.com/br/icones-gratis/confirme" title="confirme ícones">Confirme ícones criados por Tempo_doloe - Flaticon</a>
