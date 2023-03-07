@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="./scripts/script.js" defer>
+    </script>
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <a href="../index.html"><img src="../images/logo.svg" class="logo" alt="Logo com link para tela inicial"></a>
+
+        <label>Usuário ou email</label>
+        <p><input type="text" class="input-data" id="user" placeholder="Usuario97 ou usuario@email.com">
+            <p id="message-inputUser"></p>
+        </p>
+
+        <label>Senha</label>
+        <p id="inputPassword"><input type="password" class="input-data" id="password" placeholder="Crie uma senha...">
+            <p id="message-inputPassword"></p>
+        </p>
+        <p id="message-error"></p>
+
+        <button type="button" id="btn-login">Login</button>
+
+        <a href="../index.html"><img src="../images/image-hero-mobile.png" alt="Hero mobile"></a>
+    </div>
+    
+</body>
+</html>

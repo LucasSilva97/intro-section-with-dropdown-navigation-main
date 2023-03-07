@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Lato', sans-serif;
+}
+
+.login-container{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    width: 25rem;
+    height: max-content;
+    padding: 15px;
+    
+    background-size: cover;
+    box-sizing: border-box;
+    border: 1px solid #cfcece;
+    border-width: 0.521px;    
+    
+    -webkit-animation: show-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+    animation: show-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+    
+}
+
+.login-container .logo {
+    width: 7rem;
+    height: 2.5rem;
+    
+}
+
+.login-container label {
+    color: #595959;
+    font-weight: 100;
+    
+}
+
+.login-container .input-data {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    border: 1px solid #cfcece;
+    border-radius: 10px;
+}
+
+.login-container .input-data:focus{
+    outline: none;
+    border: none;
+    
+    animation: moveBorder 700ms cubic-bezier(.1,1.03,.77,.31) 100ms 1 normal forwards;
+}
+
+.login-container a{
+    align-self: center;
+}
+
+.login-container a img {
+    width: 150px;
+    height: 100px;
+}
+
+.login-container #btn-login {
+    width: 100%;
+    background: transparent;
+    padding: 8px 0;
+    border: 1px solid #595959;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    font-weight: 700;
+    color: #595959;
+}
+
+.login-container #btn-login:hover {
+    transition: .7s;
+    background-color: #000d00;
+    color: #fff;
+}
+
+.errMessage{
+    display: block;
+    font-size: 12px;
+    color: #ff0000;
+    margin-top: -12px;
+    
+    -webkit-animation: showErrMessage 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: showErrMessage 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+
+@media (max-width: 470px){
+    .login-container {
+        width: 18rem;
+    }
+}
+
+@-webkit-keyframes showErrMessage {
+    0%{
+        -webkit-transform: translateY(0);
+                transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateY(10px);
+                transform: translateX(10px);
+    }
+}
+
+@keyframes showErrMessage {
+    0%{
+        -webkit-transform: translateY(0);
+                transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateY(10px);
+                transform: translateX(10px);
+    }
+}
+
+@keyframes moveBorder{
+    0%{
+      border-bottom: 1px solid #a7bbfa;
+    }
+    25%{border-right: 1px solid #a7bbfa;
+    }
+    50%{
+        border-top: 1px solid #a7bbfa;
+        border-left: 1px solid #a7bbfa;
+    }
+    100%{
+        border-radius: 0;
+        border-bottom: 1px solid #595959;
+        border-width: 2px;
+    }
+  }
+  
+@-webkit-keyframes show-up-center {
+    from{
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+    }
+    to{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes show-up-center {
+    from{
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+    }
+    to{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
