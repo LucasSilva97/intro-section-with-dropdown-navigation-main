@@ -20,6 +20,7 @@ https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-
 
 - Frames e animações para barra de navegação
 - Criação de tela de registro de usuário
+- Adicionando tela de Login
 
 ## Metologia
 Para esse projeto foi utilizado "Mobile first". O arquivo queries adapta a página às telas de maiores resoluções
