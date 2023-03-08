@@ -2,7 +2,12 @@ const btnCollapseNavMenu = document.querySelector("#btn-collapse-nav-menu");
 const menuNavigation = document.querySelector(".menu-navigation");
 const btnclosenavMenu = document.querySelector("#btn-close-nav-menu");
 const navFeature = document.querySelector("#nav-feature");
-const navCompany = document.querySelector("#nav-company")
+const navCompany = document.querySelector("#nav-company");
+const btnLogin = document.querySelector("#btn-login");
+
+window.addEventListener("load",()=>{
+    
+})
 
 btnCollapseNavMenu.addEventListener('click', ()=>{
     menuNavigation.classList.remove('dp-none');
@@ -69,3 +74,7 @@ function changeHeroImageSection(){
         document.getElementById("back-image").src = "./images/image-hero-mobile.png"
     }
 }
+
+btnLogin.addEventListener("click",()=>{
+    window.location.href = "./loginScreen/login.html";
+})
