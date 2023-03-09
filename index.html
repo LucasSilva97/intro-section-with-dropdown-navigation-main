@@ -15,87 +15,86 @@
   
   <title>Intro section with dropdown navigation</title>
 </head>
-<body>
-  <header>
-    <img src="./images/logo.svg" alt="Logo da página">
-    <button type="button" id="btn-collapse-nav-menu">
-      <img src="./images/icon-menu.svg" alt="button that activates navigation menu">
-    </button>
-
-    <nav class="menu-navigation dp-none">
-      <button type="button" id="btn-close-nav-menu">
-        <img src="./images/icon-close-menu.svg" alt="">
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="Logo da página">
+      <button type="button" id="btn-collapse-nav-menu">
+        <img src="./images/icon-menu.svg" alt="button that activates navigation menu">
       </button>
-      <ul>
-        <li class="nav-item">
-          <h4 class="title-nav-item" id="nav-feature">Features
-            <img src="./images/icon-arrow-down.svg" class="arrow-down" alt="arrow active Features"
-            id="arrow-feactures">
-          </h4>
-            <div class="anchors-nav-item dp-none" id="features-anchors">
-            <a href="#" class="nav-item-link">
-              <img src="./images/icon-todo.svg" alt="icon todo list">
-              Todo List
-            </a>
-            <a href="#" class="nav-item-link">
-              <img src="./images/icon-calendar.svg" alt="icon calendar">
-              Calendar
-            </a>
-            <a href="#" class="nav-item-link">
-              <img src="./images/icon-reminders.svg" alt="icon reminders">
-              Reminders
-            </a>
-            <a href="#" class="nav-item-link">
-              <img src="./images/icon-planning.svg" alt="icon planning">
-              Planning
-            </a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <h4 class="title-nav-item" id="nav-company">Company
-            <img src="./images/icon-arrow-down.svg" alt="arrow active Features"
-            class="arrow-down"  id="arrow-company">
-          </h4>
-            <div class="anchors-nav-item dp-none" id="company-anchors">
-            <a href="#" class="nav-item-link">History</a>
-            <a href="#" class="nav-item-link">Our Team</a>
-            <a href="#" class="nav-item-link">Blog</a>
-          </div>
-        </li>
-        
-          <li class="nav-item">Careers</li>
-          <li class="nav-item">About</li>
-      </ul>
 
-      <div class="nav-buttons">
-        <button id="btn-login" type="button">Login</button>
-        <a href="./registrationScreen/register.html"><button id="btn-register" type="button">Register</button></a>
+      <nav id="menu" class="menu-navigation dp-none">
+        <button type="button" id="btn-close-nav-menu">
+          <img src="./images/icon-close-menu.svg" alt="">
+        </button>
+        <ul>
+          <li class="nav-item">
+            <h4 class="title-nav-item" id="nav-feature">Features
+              <img src="./images/icon-arrow-down.svg" class="arrow-down" alt="arrow active Features"
+              id="arrow-feactures">
+            </h4>
+              <div class="anchors-nav-item dp-none" id="features-anchors">
+              <a href="#" class="nav-item-link">
+                <img src="./images/icon-todo.svg" alt="icon todo list">
+                Todo List
+              </a>
+              <a href="#" class="nav-item-link">
+                <img src="./images/icon-calendar.svg" alt="icon calendar">
+                Calendar
+              </a>
+              <a href="#" class="nav-item-link">
+                <img src="./images/icon-reminders.svg" alt="icon reminders">
+                Reminders
+              </a>
+              <a href="#" class="nav-item-link">
+                <img src="./images/icon-planning.svg" alt="icon planning">
+                Planning
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <h4 class="title-nav-item" id="nav-company">Company
+              <img src="./images/icon-arrow-down.svg" alt="arrow active Features"
+              class="arrow-down"  id="arrow-company">
+            </h4>
+              <div class="anchors-nav-item dp-none" id="company-anchors">
+              <a href="#" class="nav-item-link">History</a>
+              <a href="#" class="nav-item-link">Our Team</a>
+              <a href="#" class="nav-item-link">Blog</a>
+            </div>
+          </li>
+          
+            <li class="nav-item">Careers</li>
+            <li class="nav-item">About</li>
+        </ul>
+
+        <div class="nav-buttons">
+          <button id="btn-login" type="button">Login</button>
+          <a href="./registrationScreen/register.html"><button id="btn-register" type="button">Register</button></a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="section">
+        <img src="./images/image-hero-mobile.png" alt="background image section" id="back-image">
+        <div class="paragraph-section">
+          <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline processes, 
+              create team rituals, and watch productivity soar.
+            </p>
+            <button id="btn-learn-more">Learn more</button>
+            <footer class="clients">
+              <a href="#"><img src="./images/client-databiz.svg" alt="client databiz"></a>       
+              <a href="#"><img src="./images/client-audiophile.svg" alt="client audiophile"></a>
+              <a href="#"><img src="./images/client-meet.svg" alt="client meet"></a> 
+              <a href="#"><img src="./images/client-maker.svg" alt="client maker"></a>
+            </footer>
       </div>
-    </nav>
-  </header>
-
-  <section id="section">
-      <img src="./images/image-hero-mobile.png" alt="background image section" id="back-image">
-      <div class="paragraph-section">
-        <h1>Make remote work</h1>
-          <p>
-            Get your team in sync, no matter your location. Streamline processes, 
-            create team rituals, and watch productivity soar.
-          </p>
-          <button id="btn-learn-more">Learn more</button>
-          <footer class="clients">
-            <a href="#"><img src="./images/client-databiz.svg" alt="client databiz"></a>       
-            <a href="#"><img src="./images/client-audiophile.svg" alt="client audiophile"></a>
-            <a href="#"><img src="./images/client-meet.svg" alt="client meet"></a> 
-            <a href="#"><img src="./images/client-maker.svg" alt="client maker"></a>
-          </footer>
+    </section>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/LucasSilva97/" target="_blank">Lucas Santana</a>.
     </div>
-  </section>
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/LucasSilva97/" target="_blank">Lucas Santana</a>.
-  </div>
-</body>
+  </body>
 </html>

@@ -6,8 +6,74 @@ const navCompany = document.querySelector("#nav-company");
 const btnLogin = document.querySelector("#btn-login");
 
 window.addEventListener("load",()=>{
-    
+    const arrUsers = [];
+
+    for(let i = 0; i < localStorage.length; i++){
+        arrUsers.push(JSON.parse(localStorage.getItem(`user${i+1}`)))
+    }
+
+    for(let i in arrUsers){
+        if(arrUsers[i].logon === true){
+            return loggedUser(arrUsers[i].nickname);
+        }
+    }
 })
+
+function loggedUser(username){
+    const menu = document.getElementById("menu");
+    document.getElementById("btn-register").style.display = "none";
+    btnLogin.style.display = "none";
+
+    const btnLogout = document.createElement("button");
+    btnLogout.classList.toggle("btn-logout");
+    btnLogout.innerHTML = "logout"
+    menu.appendChild(btnLogout);
+    
+    const log_user = document.createElement("h2");
+    log_user.classList.toggle("loggedUser");
+    menu.appendChild(log_user);
+
+    log_user.innerHTML = `${username}`;
+
+    btnLogout.addEventListener("click",()=>{
+        const arrUsers = [];
+
+        for(let i = 0; i < localStorage.length; i++){
+            arrUsers.push(JSON.parse(localStorage.getItem(`user${i+1}`)))
+        }
+
+        
+        localStorage.clear();
+        
+        for(let i = 0; i < arrUsers.length; i++){
+            if(arrUsers[i].logon === true){
+                arrUsers[i].logon = false;
+            }
+            localStorage.setItem(`user${i+1}`, JSON.stringify({
+                nickname: arrUsers[i].nickname,
+                email: arrUsers[i].email, 
+                password: arrUsers[i].password,
+                logon: arrUsers[i].logon
+            }));
+        }
+
+
+        exitLogout();
+
+        return setTimeout(()=>{
+            document.location.reload(true);
+        },1000) 
+    })
+}
+
+function exitLogout(){
+    const divExit = document.createElement("div");
+    divExit.classList.add("divExit")
+    divExit.innerHTML = "Exit..."
+
+    document.body.appendChild(divExit);
+}
+
 
 btnCollapseNavMenu.addEventListener('click', ()=>{
     menuNavigation.classList.remove('dp-none');
