@@ -271,6 +271,46 @@ section .clients{
             animation: slide-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+#learn-more{
+    background-color: #ffffff;
+    position: relative;
+    width: 85%;
+    height: max-content;
+    margin: auto;
+    top: 10%;
+    padding: 15px 20px;
+    box-shadow: 2px 1px 5px #595959;
+    border-radius: 15px;
 
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: left;
+    
+}
+
+#learn-more #btnCloseLearnMore {
+    width: fit-content;
+    border: none;
+    background: transparent;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #cccccc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #595959;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
 
 

@@ -144,3 +144,11 @@ function changeHeroImageSection(){
 btnLogin.addEventListener("click",()=>{
     window.location.href = "./loginScreen/login.html";
 })
+
+function learnMore(){
+    document.getElementById("learn-more").classList.remove("dp-none");
+}
+
+function closeLearnMore(){
+    document.getElementById("learn-more").classList.add("dp-none");
+}
