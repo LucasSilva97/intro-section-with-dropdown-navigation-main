@@ -20,8 +20,10 @@ https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-
 
 - Frames e animações para barra de navegação
 - Criação de tela de registro de usuário
+- Cadastro de usuários utilizando o localStorage do browser
 - Adicionando tela de Login
 - Criando opção de efetuar logout
+- Controle de acesso ás features (só podendo acessar se logado)
 
 ## Metologia
 Para esse projeto foi utilizado "Mobile first". O arquivo queries adapta a página às telas de maiores resoluções
