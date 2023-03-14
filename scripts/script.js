@@ -152,3 +152,20 @@ function learnMore(){
 function closeLearnMore(){
     document.getElementById("learn-more").classList.add("dp-none");
 }
+
+function controlAccessToFeatures(linkFeature){
+    const users = [];
+
+    for(let i = 0; i < localStorage.length; i++){
+        users.push(JSON.parse(localStorage.getItem(`user${i+1}`)))
+    };
+
+    for(let i = 0; i < localStorage.length; i++){
+        if(users[i].logon == true){
+            window.location.href = "#";
+        } else {
+            alert("Por favor, efetuar login...")
+            window.location.href = "./loginScreen/login.html";
+        }
+    };
+}
