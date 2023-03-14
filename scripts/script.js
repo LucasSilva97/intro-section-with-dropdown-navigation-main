@@ -153,7 +153,7 @@ function closeLearnMore(){
     document.getElementById("learn-more").classList.add("dp-none");
 }
 
-function controlAccessToFeatures(linkFeature){
+function controlAccessToFeatures(){
     const users = [];
 
     for(let i = 0; i < localStorage.length; i++){
