@@ -24,9 +24,8 @@ https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-
 - Adicionando tela de Login
 - Criando opção de efetuar logout
 - Controle de acesso ás features (só podendo acessar se logado)
+- Uma container com a Visão geral da "empresa"
 
-## Metologia
-Para esse projeto foi utilizado "Mobile first". O arquivo queries adapta a página às telas de maiores resoluções
+### Desenvolvido por:
 
-
-
+https://www.linkedin.com/in/lucas-ssantana/
