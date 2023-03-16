@@ -138,6 +138,28 @@
               transform: translateZ(-400px);
     }
   }
+
+  @-webkit-keyframes show-up-center {
+    from{
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+    }
+    to{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes show-up-center {
+    from{
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+    }
+    to{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
   
   
   

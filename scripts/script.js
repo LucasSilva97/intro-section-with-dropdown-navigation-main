@@ -169,3 +169,68 @@ function controlAccessToFeatures(){
         }
     };
 }
+
+const divStory = document.createElement("div");
+document.body.appendChild(divStory);
+
+function closeDivStory(div){
+    div.style.display = "none";
+}
+document.getElementById("history").addEventListener("click",()=>{
+    
+
+    divStory.innerHTML = `<div class="story_snap" id="story" style="display: flex;">
+    <button onclick="closeDivStory(story)" id="story_close">close</button>
+    
+    <div class="story_section">
+    <h3 class="story_subtitle">Story</h3>
+    <p>
+    Founded in 2002, we have been in this segment for over 20 years, 
+    bringing the best services in the market on our website, through our blog.
+    We have the best services for our business partners, here feel free to enjoy our services, 
+    here you are our partner.
+    </p>
+    <h3 class="story_subtitle">Differential</h3>
+    <p>
+    We are a prominent company in the market, receiving the award, twice in a row, 
+    as the best company in America. We bring service in our own way, always trying 
+    to serve our customers in a flexible way.
+    </p>
+        <h3 class="story_subtitle">Mission</h3>
+        <p>
+          We have the mission of delivering maximum value to our partners and customers. 
+          May they always feel "at home" when they enter our site. 
+          We have an easy payment system, bringing maximum comfort to our partners.
+          </p>
+          <h3 class="story_subtitle">Vision</h3>
+          <p>
+          Helping businesses and our consumers thrive in a sustainable economy where people, 
+          profits and planets are in balance. Our vision is to grow our business, 
+          while decoupling growth from our environmental footprint and increasing positive social impact.
+          </p>
+          <h3 class="story_subtitle">Our principles</h3>
+          <p>
+            <ul class="principles-list">
+                    <li class="principle">Responsibility</li>
+                    <li class="principle">Commitment</li>
+                    <li class="principle">Diversity</li>
+                    <li class="principle">Innovation</li>
+                    <li class="principle">Honesty</li>
+                </ul>
+            </p>
+            <h3 class="story_subtitle">Causes we support</h3>
+            <p>
+                <ul class="causes-list">
+                    <li class="cause">Social responsability</li>
+                    <li class="cause">Tax Responsibility</li>
+                    <li class="cause">Legality</li>
+                    <li class="cause">Sustentabilidade</li>
+                </ul>
+            </p>
+            <a href="#"><h4>Meet our team</h4></a>
+            </div>
+            </div>`;
+            
+            return divStory;
+        })
+        

@@ -131,4 +131,32 @@
         position: absolute;
         height: 23rem;
    }
+
+   .story_snap .story_section {
+        width: 90%;
+        border-radius: 20px;
+        margin-top: 20px;
+   }
+
+   .story_section .story_subtitle {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .story_snap .story_section p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .story_snap .story_section ul li {
+        font-size: 13px;
+    }
+
+    .story_snap .story_section ul li {
+        margin-top: 10px;
+    }
+    .story_snap .story_section a {
+        margin-top: 15px;
+    }
+
 }
